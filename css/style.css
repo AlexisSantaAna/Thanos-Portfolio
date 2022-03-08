@@ -44,7 +44,7 @@ h1 {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../img2/c1.jpg) center center/cover no-repeat fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../img/c1.jpg) center center/cover no-repeat fixed;
   height: 100vh;
 }
 
@@ -255,5 +255,12 @@ footer ul li a:hover {
 @media (max-width: 590px) {
   h1 {
     font-size: 3.5rem;
+  }
+  .mr {
+    margin-right: 0;
+    --mdb-gutter-x: 0rem;
+  }
+  .popover {
+    max-width: 60%;
   }
 }

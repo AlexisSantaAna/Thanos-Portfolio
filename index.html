@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Material Design for Bootstrap</title>
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <title>Thanos Portfolio</title>
+  <!-- icon -->
+  <link rel="icon" href="img/icon.png" type="image/x-icon" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
   <!-- Google Fonts Roboto Condensed -->
@@ -15,6 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" />
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Para usar el popover img -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -61,17 +63,17 @@
           <!-- Icons -->
           <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="https://www.facebook.com/MarvelLatinoamerica" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="https://twitter.com/Marvel" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="nav-item me-3 me-lg-0">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="https://www.instagram.com/marvel/" target="_blank">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
@@ -128,22 +130,26 @@
       </div>
     </section>
     <!-- about me -->
+    <div class="wrapper">
+    </div>
     <section id="aboutMe">
       <div class="container justify-content-center align-items-center text-center">
         <h3 class="my-5"><strong>About me</strong></h3>
         <div class="row">
           <div class="col-md-6 mb-5">
-            <img src="img2/a.jpg" alt="my picture" class="rounded-circle shadow-3-strong">
+            <img src="img/a.jpg" alt="my picture" class="rounded-circle shadow-3-strong">
             <p class="mt-4"><strong>Who's this guy?</strong></p>
-            <p>I'm a Front-End Developer for MDB in Los Angeles, CA. I have passion for UI effects, animations and
+            <p>I'm a Front-End Developer in Titan. I have passion for UI effects, animations and
               creating intuitive, dynamic user experiences. Let's make something special.</p>
             <div>
-              <a class="btn btn-primary btn-floating shadow-3-strong" style="background-color: #3b5998;" href="#!"
-                role="button"><i class="fab fa-facebook-f"></i></a>
-              <a class="btn btn-primary btn-floating mx-2 shadow-3-strong" style="background-color: #55acee;" href="#!"
-                role="button"><i class="fab fa-twitter"></i></a>
-              <a class="btn btn-primary btn-floating shadow-3-strong" style="background-color: #ac2bac;" href="#!"
-                role="button"><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-primary btn-floating shadow-3-strong" style="background-color: #3b5998;"
+                href="https://www.facebook.com/MarvelLatinoamerica" role="button" target="_blank"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-primary btn-floating mx-2 shadow-3-strong" style="background-color: #55acee;"
+                href="https://twitter.com/Marvel" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-primary btn-floating shadow-3-strong" style="background-color: #ac2bac;"
+                href="https://www.instagram.com/marvel/" role="button" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
             </div>
           </div>
           <div class="col-md-6 mb-5">
@@ -153,7 +159,7 @@
 
               </div>
               <div class="col-4 stone-1">
-                <img src="img2/s1.png" alt="" class="img-fluid stone">
+                <img src="img/s1.png" alt="" class="img-fluid stone" data-toggle="popover1" title="Power Stone">
                 <p>POWER STONE</p>
               </div>
               <div class="col-4">
@@ -162,25 +168,25 @@
             </div>
             <div class="row">
               <div class="col-4 stone-2">
-                <img src="img2/s2.png" alt="" class="img-fluid stone">
+                <img src="img/s2.png" alt="" class="img-fluid stone" data-toggle="popover2" title="Space Stone">
                 <p>SPACE STONE</p>
               </div>
               <div class="col-4 stone-3">
-                <img src="img2/s3.png" alt="" class="img-fluid stone">
+                <img src="img/s3.png" alt="" class="img-fluid stone" data-toggle="popover3" title="Reality Stone">
                 <p>REALITY STONE</p>
               </div>
               <div class="col-4 stone-4">
-                <img src="img2/s4.png" alt="" class="img-fluid stone">
+                <img src="img/s4.png" alt="" class="img-fluid stone" data-toggle="popover4" title="Soul Stone">
                 <p>SOUL STONE</p>
               </div>
             </div>
             <div class="row">
               <div class="col-6 stone-5">
-                <img src="img2/s5.png" alt="" class="img-fluid stone">
+                <img src="img/s5.png" alt="" class="img-fluid stone" data-toggle="popover5" title="Time Stone">
                 <p>TIME STONE</p>
               </div>
               <div class="col-6 stone-6">
-                <img src="img2/s6.png" alt="" class="img-fluid stone">
+                <img src="img/s6.png" alt="" class="img-fluid stone" data-toggle="popover6" title="Mind Stone">
                 <p>MIND STONE</p>
               </div>
             </div>
@@ -199,7 +205,7 @@
           <div class="col-md-12 col-lg-4 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img2/p1.jpg" class="img-fluid p-2" />
+                <img src="img/p1.jpg" class="img-fluid p-2" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -214,7 +220,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img2/p2.jpg" class="img-fluid p-2" />
+                <img src="img/p2.jpg" class="img-fluid p-2" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -229,7 +235,7 @@
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img2/p3.jpg" class="img-fluid p-2" />
+                <img src="img/p3.jpg" class="img-fluid p-2" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -293,97 +299,103 @@
   <footer class="text-center text-lg-start align-items-center justify-content-center">
     <!-- Copyright -->
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-4 issue-container d-flex justify-content-center">
-          <img class="img-fluid issue" src="img2/i1.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-1" alt="">
-          <img class="img-fluid issue" src="img2/i2.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-2" alt="">
-          <img class="img-fluid issue" src="img2/i3.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-3" alt="">
+      <div class="row mr">
+        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+          <img class="img-fluid issue" src="img/i1.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-1" alt="">
+          <img class="img-fluid issue" src="img/i2.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-2" alt="">
+          <img class="img-fluid issue" src="img/i3.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-3" alt="">
         </div>
         <div class="col-md-6 col-lg-4 issue-container d-flex justify-content-center">
-          <img class="img-fluid issue" src="img2/i4.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-4" alt="">
-          <img class="img-fluid issue" src="img2/i5.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-5" alt="">
-          <img class="img-fluid issue" src="img2/i6.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-6" alt="">
+          <img class="img-fluid issue" src="img/i4.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-4" alt="">
+          <img class="img-fluid issue" src="img/i5.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-5" alt="">
+          <img class="img-fluid issue" src="img/i6.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-6" alt="">
         </div>
         <div class="col-md-12 col-lg-4">
           <h4 class="h6 py-3">FOLLOW THANOS</h4>
           <ul class="navbar-nav d-flex flex-row">
-            <li class="me-lg-0"><a class=""><i class="fab fa-facebook-square fa-lg"></i></i></a></li>
-            <li class="me-lg-0"><a class=""><i class="fab fa-instagram fa-lg"></i></a></li>
-            <li class="me-lg-0"><a class=""><i class="fab fa-twitter-square fa-lg"></i></a></li>
-            <li class="me-lg-0"><a class=""><i class="fab fa-youtube fa-lg"></i></a></li>
-            <li class="me-lg-0"><a class=""><i class="fab fa-pinterest-square fa-lg"></i></a></li>
+            <li class="me-lg-0"><a href="https://www.facebook.com/MarvelLatinoamerica" target="_blank"><i
+                  class="fab fa-facebook-square fa-lg"></i></i></a></li>
+            <li class="me-lg-0"><a href="https://www.instagram.com/marvel/" target="_blank"><i
+                  class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="me-lg-0"><a href="https://twitter.com/Marvel" target="_blank"><i
+                  class="fab fa-twitter-square fa-lg"></i></a></li>
+            <li class="me-lg-0"><a href="https://www.youtube.com/results?search_query=thanos" target="_blank"><i
+                  class="fab fa-youtube fa-lg"></i></a></li>
+            <li class="me-lg-0"><a
+                href="https://ar.pinterest.com/search/pins/?q=thanos&rs=typed&term_meta[]=thanos%7Ctyped"
+                target="_blank"><i class="fab fa-pinterest-square fa-lg"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="text-center p-3">
       Website designed & developed by
-      <a href="#">Alexis Santa Ana</a>
+      <a href="https://www.linkedin.com/in/alexis-leandro-santa-ana-9176b622b/" target="_blank">Alexis Santa Ana</a>
     </div>
   </footer>
 
   <!-- Modal 1 -->
   <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
           <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 1</h5>
-          <img src="img2/i1.jpg" class="img-fluid" alt="">
+          <img src="img/i1.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
   </div>
-   <!-- Modal 2 -->
-   <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
           <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 2</h5>
-          <img src="img2/i2.jpg" class="img-fluid" alt="">
+          <img src="img/i2.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
   </div>
   <!-- Modal 3 -->
   <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
           <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 3</h5>
-          <img src="img2/i3.jpg" class="img-fluid" alt="">
+          <img src="img/i3.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
   </div>
   <!-- Modal 4 -->
   <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
           <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 4</h5>
-          <img src="img2/i4.jpg" class="img-fluid" alt="">
+          <img src="img/i4.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
   </div>
   <!-- Modal 5 -->
   <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
           <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 5</h5>
-          <img src="img2/i5.jpg" class="img-fluid" alt="">
+          <img src="img/i5.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
   </div>
   <!-- Modal 6 -->
   <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
           <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 6</h5>
-          <img src="img2/i6.jpg" class="img-fluid" alt="">
+          <img src="img/i6.jpg" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -393,7 +405,7 @@
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript" src="js/code.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
