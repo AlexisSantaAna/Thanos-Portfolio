@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light shadow-2-strong d-flex">
       <!-- Container wrapper -->
@@ -42,19 +42,19 @@
           <!-- Left links -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">HOME</a>
+              <a class="nav-link active" href="#home">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FEATURES</a>
+              <a class="nav-link" href="#features">FEATURES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT ME</a>
+              <a class="nav-link" href="#aboutMe">ABOUT ME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">MY PROJECTS</a>
+              <a class="nav-link" href="#myProjects">MY PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -87,11 +87,15 @@
         <h1>THANOS</h1>
         <h4 class="mb-3">Mad Titan</h4>
         <a class="btn btn-1 btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-          role="button" rel="nofollow" target="_blank"><div class="btn-skew">My gems</div></a>
+          role="button" rel="nofollow" target="_blank">
+          <div class="btn-skew">My gems</div>
+        </a>
         <a class="btn btn-1 btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank"
-          role="button"><div class="btn-skew">My plan</div></a>
+          role="button">
+          <div class="btn-skew">My plan</div>
+        </a>
       </div>
-    </div>   
+    </div>
   </header>
   <main>
     <!-- features -->
@@ -124,7 +128,7 @@
       </div>
     </section>
     <!-- about me -->
-    <section class="aboutme">
+    <section id="aboutMe">
       <div class="container justify-content-center align-items-center text-center">
         <h3 class="my-5"><strong>About me</strong></h3>
         <div class="row">
@@ -185,8 +189,10 @@
       </div>
     </section>
     <!-- projects -->
-    <section class="projects">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#fff" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path></svg>
+    <section id="myProjects" class="projects">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+        <path fill="#fff" fill-opacity="1" d="M0,96L1440,32L1440,0L0,0Z"></path>
+      </svg>
       <div class="container justify-content-center align-items-center text-center">
         <h3 class="mb-5 projects-title"><strong>My projects</strong></h3>
         <div class="row">
@@ -237,10 +243,12 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100"><path fill="#fff" fill-opacity="1" d="M0,96L1440,32L1440,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path fill="#fff" fill-opacity="1" d="M0,96L1440,32L1440,320L0,320Z"></path>
+      </svg>
     </section>
     <!-- form -->
-    <section class="form justify-content-center align-items-center text-center my-5">
+    <section id="contact" class="form justify-content-center align-items-center text-center my-5">
       <div class="container">
         <h3 class="my-5"><strong>Contact me</strong></h3>
         <div class="row justify-content-center">
@@ -282,19 +290,110 @@
   </main>
 
   <!-- footer -->
-  <footer class="bg-light text-center text-lg-start">
+  <footer class="text-center text-lg-start align-items-center justify-content-center">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 issue-container d-flex justify-content-center">
+          <img class="img-fluid issue" src="img2/i1.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-1" alt="">
+          <img class="img-fluid issue" src="img2/i2.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-2" alt="">
+          <img class="img-fluid issue" src="img2/i3.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-3" alt="">
+        </div>
+        <div class="col-md-6 col-lg-4 issue-container d-flex justify-content-center">
+          <img class="img-fluid issue" src="img2/i4.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-4" alt="">
+          <img class="img-fluid issue" src="img2/i5.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-5" alt="">
+          <img class="img-fluid issue" src="img2/i6.jpg" data-mdb-toggle="modal" data-mdb-target="#modal-6" alt="">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <h4 class="h6 py-3">FOLLOW THANOS</h4>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="me-lg-0"><a class=""><i class="fab fa-facebook-square fa-lg"></i></i></a></li>
+            <li class="me-lg-0"><a class=""><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li class="me-lg-0"><a class=""><i class="fab fa-twitter-square fa-lg"></i></a></li>
+            <li class="me-lg-0"><a class=""><i class="fab fa-youtube fa-lg"></i></a></li>
+            <li class="me-lg-0"><a class=""><i class="fab fa-pinterest-square fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <!-- Copyright -->
+    <div class="text-center p-3">
+      Website designed & developed by
+      <a href="#">Alexis Santa Ana</a>
+    </div>
   </footer>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 1</h5>
+          <img src="img2/i1.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Modal 2 -->
+   <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 2</h5>
+          <img src="img2/i2.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 3</h5>
+          <img src="img2/i3.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 4</h5>
+          <img src="img2/i4.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 5 -->
+  <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 5</h5>
+          <img src="img2/i5.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 6 -->
+  <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex flex-column">
+          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 6</h5>
+          <img src="img2/i6.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- MDB -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script type="text/javascript" src="js/code.js"></script>
 </body>
 
 </html>

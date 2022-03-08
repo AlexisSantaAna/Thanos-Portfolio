@@ -1,5 +1,6 @@
 * {
   font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root{
@@ -7,7 +8,7 @@
     --main-purple: #7904a0;
     --main-black: #202020;
     --main-white: #f0f0f0;
-    --main-gray: #303841;
+    --main-gray: #929292;
     --main-orange: #ffa31a;
     --main-blue: rgb(50, 50, 255);
     --main-darkblue: rgb(0, 0, 251);
@@ -43,13 +44,13 @@ h1 {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../img2/c1.jpg) center center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../img2/c1.jpg) center center/cover no-repeat fixed;
   height: 100vh;
 }
 
 /* navbar */
 
-ul li a,
+header ul li a,
 .navbar-brand {
   color: white !important;
   font-size: 1.4rem;
@@ -59,11 +60,11 @@ ul li a,
   color: var(--main-white);
 }
 
-ul li a {
+header ul li a {
   transition: .4s !important;
 }
 
-ul li a:hover {
+header ul li a:hover {
   transform: translateX(-.5rem) skewX(-10deg) !important;
   background-color: var(--main-darkblue) !important;
 }
@@ -182,6 +183,42 @@ ul li a:hover {
   color: var(--main-white);
 }
 
+/* footer */
+
+footer {
+  background: var(--main-black);
+  color: var(--main-white);  
+}
+
+footer .container {
+  padding: 2rem 0 1rem 0;
+}
+
+footer a {
+  color: var(--main-orange);
+}
+
+footer a:hover {
+  color: #eeb35b
+}
+
+footer ul li a {
+  color: var(--main-gray);
+  transition: .4s;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+footer ul li a:hover {
+  color: var(--main-white)
+}
+
+.issue {
+  width: 20%;
+  margin: auto;
+  cursor: pointer;
+}
+
 /* keyframes */
 
 @keyframes letterSpacing {
@@ -195,6 +232,19 @@ ul li a:hover {
 }
 
 /* responsive */
+@media (max-width: 992px) {
+  footer ul {
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.109);
+    padding-bottom: 2rem;
+  }
+  footer ul li a{    
+    margin: 0;
+  }
+  .issue {
+    padding-bottom: 1rem;
+  }
+}
 
 @media (max-width: 768px) {
   h1 {
