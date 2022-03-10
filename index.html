@@ -88,12 +88,10 @@
       <div class="text-white text-center header-text">
         <h1>THANOS</h1>
         <h4 class="mb-3">Mad Titan</h4>
-        <a class="btn btn-1 btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-          role="button" rel="nofollow" target="_blank">
+        <a class="btn btn-1 btn-outline-light btn-lg m-2" href="#aboutMe" role="button" rel="nofollow">
           <div class="btn-skew">My gems</div>
         </a>
-        <a class="btn btn-1 btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank"
-          role="button">
+        <a class="btn btn-1 btn-outline-light btn-lg m-2" href="#myProjects" role="button">
           <div class="btn-skew">My plan</div>
         </a>
       </div>
@@ -213,7 +211,7 @@
               <div class="card-body p-3">
                 <h5 class="card-title">Find stones</h5>
                 <p class="card-text">To get unlimited power</p>
-                <a href="#!" class="btn btn-2">See live</a>
+                <a href="#televisor" class="btn btn-2">See live</a>
               </div>
             </div>
           </div>
@@ -228,7 +226,7 @@
               <div class="card-body p-3">
                 <h5 class="card-title">Find glove</h5>
                 <p class="card-text">To use these stones you have to put them in this glove</p>
-                <a href="#!" class="btn btn-2">See live</a>
+                <a href="#televisor" class="btn btn-2">See live</a>
               </div>
             </div>
           </div>
@@ -243,7 +241,7 @@
               <div class="card-body p-3">
                 <h5 class="card-title">Snap fingers</h5>
                 <p class="card-text">To wipeout half of the universe population</p>
-                <a href="#!" class="btn btn-2">See live</a>
+                <a href="#televisor" class="btn btn-2">See live</a>
               </div>
             </div>
           </div>
@@ -256,9 +254,19 @@
     <!-- form -->
     <section id="contact" class="form justify-content-center align-items-center text-center my-5">
       <div class="container">
-        <h3 class="my-5"><strong>Contact me</strong></h3>
+        <h3 class="contact-title"><strong>Contact me</strong></h3>
         <div class="row justify-content-center">
-          <div class="col-md-6">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="televisor" id="televisor">
+              <div class="televisor-btn" onclick="encenderTelevisor(),sonidosTelevisor()">
+
+              </div>
+            </div>
+            <audio id="tvOn" src="sounds/tv on.mp3"></audio>
+            <audio id="tvOff" src="sounds/tv off.mp3"></audio>
+            <audio id="noise" src="sounds/ruidoblanco.mp3" loop></audio>
+          </div>
+          <div class="col-md-8">
             <form>
               <!-- Name input -->
               <div class="form-outline mb-4">
@@ -339,7 +347,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
-          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 1</h5>
+          <div class="d-flex align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 1</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="img/i1.jpg" class="img-fluid" alt="">
         </div>
       </div>
@@ -350,7 +361,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
-          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 2</h5>
+          <div class="d-flex align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 2</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="img/i2.jpg" class="img-fluid" alt="">
         </div>
       </div>
@@ -361,7 +375,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
-          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 3</h5>
+          <div class="d-flex align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 3</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="img/i3.jpg" class="img-fluid" alt="">
         </div>
       </div>
@@ -372,7 +389,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
-          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 4</h5>
+          <div class="d-flex align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 4</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="img/i4.jpg" class="img-fluid" alt="">
         </div>
       </div>
@@ -383,7 +403,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
-          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 5</h5>
+          <div class="d-flex align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 5</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="img/i5.jpg" class="img-fluid" alt="">
         </div>
       </div>
@@ -394,7 +417,10 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header d-flex flex-column">
-          <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 6</h5>
+          <div class="d-flex align-items-center">
+            <h5 class="modal-title" id="exampleModalLabel">Thanos vol. 6</h5>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="img/i6.jpg" class="img-fluid" alt="">
         </div>
       </div>

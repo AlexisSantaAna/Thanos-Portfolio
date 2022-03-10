@@ -1,3 +1,5 @@
+// popover
+
 $(document).ready(function () {
   $('[data-toggle="popover1"]').popover({
     placement: 'top',
@@ -51,3 +53,32 @@ $(document).ready(function () {
     content: '<div class="row img-fluid"><img src="img/s6.jpg" class="img-fluid mb-1" alt="power stone"><p>It was previously owned by Thanos inside his Scepter who lent it to Loki for the Chitauri Invasion. After the Battle of New York, the Scepter was confiscated by HYDRA, whose scientists used it to give extraordinary powers to the twins Wanda and Pietro Maximoff. </p></div>'
   });
 });
+
+// thanos television
+
+let estadoTelevisor = "apagado"
+let televisor = document.getElementById("televisor")
+let tvOn = document.getElementById("tvOn")
+let tvOff = document.getElementById("tvOff")
+let noise = document.getElementById("noise")
+
+function encenderTelevisor() {
+    if (estadoTelevisor == "apagado") {
+        estadoTelevisor = "encendido";
+        televisor.classList.add("switch")
+    } else {
+        estadoTelevisor = "apagado"
+        televisor.classList.remove("switch")
+    }
+}
+
+function sonidosTelevisor() {
+    if (noise.paused) {
+        tvOn.play();
+        noise.play();
+    } else {
+        tvOff.play();
+        noise.pause();
+        noise.currentTime = 0;
+    }
+}
