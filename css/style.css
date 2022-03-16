@@ -3,15 +3,27 @@
   scroll-behavior: smooth;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
+#features h5,
+#features h3 {
+  color: var(--main-white);
+  text-shadow: 2px 2px 3px var(--main-black);
+}
+
 :root{
     --main-teal: #6DF9D6;
     --main-purple: #7904a0;
     --main-black: #202020;
     --main-white: #f0f0f0;
     --main-gray: #929292;
-    --main-orange: #ffa31a;
+    --main-orange: #f9bf3b;
+    --main-darkorange: #f6ac00;
     --main-blue: rgb(50, 50, 255);
     --main-darkblue: rgb(0, 0, 251);
+    --main-lightblue: #00bff3;
     --main-transp: rgba(0, 0, 255, 0.075);;
 }
 
@@ -72,7 +84,11 @@ header ul li a:hover {
 /* features */
 
 .icon-color {
-  color: var(--main-purple);
+  color: var(--main-blue);
+}
+
+#features {
+  background: var(--main-orange);
 }
 
 /* about me stones*/
@@ -187,6 +203,7 @@ header ul li a:hover {
   margin: 3rem 0;
 }
 
+
 /* footer */
 
 footer {
@@ -221,6 +238,11 @@ footer ul li a:hover {
   width: 20%;
   margin: auto;
   cursor: pointer;
+  transition: all ease .2s;
+}
+
+.issue:hover {
+  transform: scale(1.2)
 }
 
 /* thanos television */
@@ -241,9 +263,10 @@ footer ul li a:hover {
 
 .televisor-btn {
   position: relative;
+  cursor: pointer;
   top: 110px;
-  left: 210px;
-  width: 40px;
+  left: 59px;
+  width: 185px;
   height: 120px;
 }
 
