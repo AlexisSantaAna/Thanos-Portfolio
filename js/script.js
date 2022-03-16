@@ -1,3 +1,9 @@
+// aos
+
+AOS.init({
+  once: true,
+  });
+
 // popover
 
 $(document).ready(function () {
