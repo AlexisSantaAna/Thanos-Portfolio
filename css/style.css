@@ -103,7 +103,7 @@ header ul li a:hover {
 }
 
 /* stone 1 */
-.stone-1{
+.stone-1:hover{
   animation: stoneGlow .7s infinite alternate;
 }
 
@@ -116,9 +116,8 @@ header ul li a:hover {
 }
 
 /* stone 2 */
-.stone-2{
+.stone-2:hover{
   animation: stoneGlow2 .7s infinite alternate;
-  animation-delay: .5s;
 }
 
 @keyframes stoneGlow2 {
@@ -130,9 +129,8 @@ header ul li a:hover {
 }
 
 /* stone 3 */
-.stone-3{
+.stone-3:hover{
   animation: stoneGlow3 .7s infinite alternate;
-  animation-delay: .3s;
 }
 
 @keyframes stoneGlow3 {
@@ -144,9 +142,8 @@ header ul li a:hover {
 }
 
 /* stone 4 */
-.stone-4{
+.stone-4:hover{
   animation: stoneGlow4 .7s infinite alternate;
-  animation-delay: .7s;
 }
 
 @keyframes stoneGlow4 {
@@ -158,9 +155,8 @@ header ul li a:hover {
 }
 
 /* stone 5 */
-.stone-5{
+.stone-5:hover{
   animation: stoneGlow5 .7s infinite alternate;
-  animation-delay: .1s;
 }
 
 @keyframes stoneGlow5 {
@@ -172,9 +168,8 @@ header ul li a:hover {
 }
 
 /* stone 6 */
-.stone-6{
+.stone-6:hover{
   animation: stoneGlow6 .7s infinite alternate;
-  animation-delay: .4s;
 }
 
 @keyframes stoneGlow6 {
